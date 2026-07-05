@@ -2082,7 +2082,7 @@ dependencies = [
 [[package]]
 name = "uart_sifive"
 version = "0.0.0"
-source = "git+https://github.com/duskmoon314/uart-rs/#2dbe8744be4922839900e907862a96d225fd601c"
+source = "git+https://github.com/duskmoon314/uart-rs/?rev=2dbe874#2dbe8744be4922839900e907862a96d225fd601c"
 dependencies = [
  "bitflags 2.13.0",
  "volatile-register",
@@ -2091,7 +2091,7 @@ dependencies = [
 [[package]]
 name = "uart_xilinx"
 version = "0.2.0"
-source = "git+https://github.com/duskmoon314/uart-rs/?rev=12be9142#12be91421ad140f2a4bf4179578fd7a8fbc7ff5c"
+source = "git+https://github.com/duskmoon314/uart-rs/?rev=2dbe874#2dbe8744be4922839900e907862a96d225fd601c"
 dependencies = [
  "bitflags 2.13.0",
  "volatile-register",

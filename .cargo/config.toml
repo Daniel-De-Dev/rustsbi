@@ -25,13 +25,9 @@ git = "https://github.com/arceos-org/arceos.git"
 rev = "8f89bb24"
 replace-with = "vendored-sources"
 
-[source."git+https://github.com/duskmoon314/uart-rs/"]
+[source."git+https://github.com/duskmoon314/uart-rs/?rev=2dbe874"]
 git = "https://github.com/duskmoon314/uart-rs/"
-replace-with = "vendored-sources"
-
-[source."git+https://github.com/duskmoon314/uart-rs/?rev=12be9142"]
-git = "https://github.com/duskmoon314/uart-rs/"
-rev = "12be9142"
+rev = "2dbe874"
 replace-with = "vendored-sources"
 
 [source."git+https://github.com/rafalh/rust-fatfs?rev=4eccb50"]
