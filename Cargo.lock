@@ -1811,6 +1811,7 @@ dependencies = [
 [[package]]
 name = "serde-device-tree"
 version = "0.0.1"
+source = "git+https://github.com/rustsbi/serde-device-tree?branch=main#ffb4855fad24f7e90bfb533c151aa311dc8d9a7b"
 dependencies = [
  "erased-serde",
  "serde",

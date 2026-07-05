@@ -38,7 +38,7 @@ debug = true
 
 [workspace.dependencies]
 riscv = { version = "0.16.0", default-features = false }
-serde-device-tree = { path = "vendor/serde-device-tree", features = ["ser", "alloc"]}
+serde-device-tree = { git = "https://github.com/rustsbi/serde-device-tree", branch = "main", features = ["ser", "alloc"]}
 
 [patch."https://github.com/rustsbi/xuantie"]
 xuantie-riscv = { git = "https://github.com/Daniel-De-Dev/xuantie", branch = "main" }
