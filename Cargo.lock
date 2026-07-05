@@ -1826,7 +1826,6 @@ dependencies = [
 [[package]]
 name = "serde-device-tree"
 version = "0.0.1"
-source = "git+https://github.com/rustsbi/serde-device-tree?rev=ffb4855#ffb4855fad24f7e90bfb533c151aa311dc8d9a7b"
 dependencies = [
  "erased-serde",
  "serde",
@@ -2281,7 +2280,7 @@ dependencies = [
 [[package]]
 name = "xuantie-riscv"
 version = "0.0.0"
-source = "git+https://github.com/Daniel-De-Dev/xuantie?branch=main#a46cf771262f975d7262958e445e5258f2ab04c5"
+source = "git+https://github.com/Daniel-De-Dev/xuantie?branch=main#d697ae54a2bf99a95c5b9cb98ea7195475dab091"
 dependencies = [
  "bit_field",
  "bitflags 2.13.0",
@@ -2312,4 +2311,4 @@ dependencies = [
 [[patch.unused]]
 name = "xuantie-riscv-rt"
 version = "0.0.0"
-source = "git+https://github.com/Daniel-De-Dev/xuantie?branch=main#a46cf771262f975d7262958e445e5258f2ab04c5"
+source = "git+https://github.com/Daniel-De-Dev/xuantie?branch=main#d697ae54a2bf99a95c5b9cb98ea7195475dab091"

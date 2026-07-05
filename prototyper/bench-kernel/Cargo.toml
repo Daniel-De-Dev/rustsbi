@@ -11,7 +11,7 @@ publish = false
 [dependencies]
 sbi-testing = { path = "../../library/sbi-testing", features = ["log"] }
 sbi-spec = { version = "0.0.9", path = "../../library/sbi-spec" }
-serde-device-tree = { git = "https://github.com/rustsbi/serde-device-tree", rev= "ffb4855", default-features = false }
+serde-device-tree = { workspace = true }
 serde = { version = "1.0.202", default-features = false, features = ["derive"] }
 log = "0.4"
 riscv = { workspace = true }

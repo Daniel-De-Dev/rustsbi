@@ -59,10 +59,5 @@ git = "https://github.com/rustsbi/fast-trap"
 rev = "8d855afa"
 replace-with = "vendored-sources"
 
-[source."git+https://github.com/rustsbi/serde-device-tree?rev=ffb4855"]
-git = "https://github.com/rustsbi/serde-device-tree"
-rev = "ffb4855"
-replace-with = "vendored-sources"
-
 [source.vendored-sources]
 directory = "vendor"
