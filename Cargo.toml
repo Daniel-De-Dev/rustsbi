@@ -13,7 +13,6 @@ members = [
     "library/pmpm",
     "library/smm",
     "prototyper/prototyper",
-    "prototyper/bench-kernel",
     "prototyper/test-kernel",
     "arceboot",
     "xtask",

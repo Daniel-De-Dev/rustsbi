@@ -1670,21 +1670,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "rustsbi-bench-kernel"
-version = "0.0.0"
-dependencies = [
- "log",
- "rcore-console",
- "riscv",
- "sbi-spec 0.0.9",
- "sbi-testing",
- "serde",
- "serde-device-tree",
- "spin 0.9.8",
- "uart16550",
-]
-
-[[package]]
 name = "rustsbi-macros"
 version = "0.0.2"
 dependencies = [
