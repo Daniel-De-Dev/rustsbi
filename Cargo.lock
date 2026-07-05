@@ -2281,7 +2281,7 @@ dependencies = [
 [[package]]
 name = "xuantie-riscv"
 version = "0.0.0"
-source = "git+https://github.com/rustsbi/xuantie?rev=7a521c04#7a521c0400dc7edb7a3ee103206dd8246c78d542"
+source = "git+https://github.com/Daniel-De-Dev/xuantie?branch=main#a46cf771262f975d7262958e445e5258f2ab04c5"
 dependencies = [
  "bit_field",
  "bitflags 2.13.0",
@@ -2308,3 +2308,8 @@ dependencies = [
  "quote",
  "syn 2.0.118",
 ]
+
+[[patch.unused]]
+name = "xuantie-riscv-rt"
+version = "0.0.0"
+source = "git+https://github.com/Daniel-De-Dev/xuantie?branch=main#a46cf771262f975d7262958e445e5258f2ab04c5"

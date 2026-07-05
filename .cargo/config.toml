@@ -15,6 +15,11 @@ rustflags = ["-Zcrate-attr=feature(core_io)", "-Aunused-features"]
 [source.crates-io]
 replace-with = "vendored-sources"
 
+[source."git+https://github.com/Daniel-De-Dev/xuantie?branch=main"]
+git = "https://github.com/Daniel-De-Dev/xuantie"
+branch = "main"
+replace-with = "vendored-sources"
+
 [source."git+https://github.com/arceos-org/arceos.git?rev=8f89bb24"]
 git = "https://github.com/arceos-org/arceos.git"
 rev = "8f89bb24"
@@ -57,11 +62,6 @@ replace-with = "vendored-sources"
 [source."git+https://github.com/rustsbi/serde-device-tree?rev=ffb4855"]
 git = "https://github.com/rustsbi/serde-device-tree"
 rev = "ffb4855"
-replace-with = "vendored-sources"
-
-[source."git+https://github.com/rustsbi/xuantie?rev=7a521c04"]
-git = "https://github.com/rustsbi/xuantie"
-rev = "7a521c04"
 replace-with = "vendored-sources"
 
 [source.vendored-sources]
