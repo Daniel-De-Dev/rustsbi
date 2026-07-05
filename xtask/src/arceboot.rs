@@ -189,7 +189,7 @@ fn build_arceboot(
 ) -> Option<ExitStatus> {
     let linker_script = arceboot_dir.join("link.ld");
     let rustflags = format!(
-        "-Zcrate-attr=feature(core_io) -Aunused-features -C opt-level=z -C panic=abort -C relocation-model=static -C target-cpu=generic -C link-arg=-T{}",
+        "-Aunused-features -C opt-level=z -C panic=abort -C relocation-model=static -C target-cpu=generic -C link-arg=-T{}",
         linker_script.display()
     );
 
