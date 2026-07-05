@@ -135,6 +135,7 @@ fn build_prototyper(arg: &PrototyperArg) -> Option<ExitStatus> {
     let status = cargo::Cargo::new("build")
         .package(PACKAGE_NAME)
         .target(arch)
+        .unstable("build-std", ["core", "alloc"])
         .env("RUSTFLAGS", rustflags)
         .features(&arg.features)
         .optional(arg.fdt.is_some(), |cargo| {
