@@ -1,0 +1,29 @@
+[package]
+name = "axplat-arm-peripherals"
+version = "0.1.2"
+description = "ARM32/ARM64 common peripheral drivers with `axplat` compatibility"
+documentation = "https://docs.rs/axplat-arm-peripherals"
+keywords = ["arceos", "os", "hal", "peripheral", "arm"]
+categories = ["embedded", "no-std", "hardware-support", "os"]
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+homepage.workspace = true
+repository.workspace = true
+
+[features]
+irq = ["axplat/irq"]
+
+[dependencies]
+kspin = "0.2"
+log = "0.4"
+int_ratio = "0.1"
+lazyinit = "0.2"
+arm_pl011 = "0.1"
+arm_pl031 = "0.2"
+arm-gic-driver = "0.17"
+axcpu = { workspace = true }
+axplat = { workspace = true }
+
+[package.metadata.docs.rs]
+targets = ["armv7a-none-eabi", "aarch64-unknown-none"]

@@ -1,13 +1,54 @@
-[alias]
-xtask = "run --package xtask --release --"
-arceboot = "xtask arceboot"
-prototyper = "xtask prototyper"
-test-kernel = "xtask test"
-bench-kernel = "xtask bench"
+[source.crates-io]
+replace-with = "vendored-sources"
 
-[env]
-# Environment variables for ArceBoot
-AX_CONFIG_PATH = { value = "arceboot/.axconfig.toml", relative = true }
+[source."git+https://github.com/arceos-org/arceos.git?rev=8f89bb24"]
+git = "https://github.com/arceos-org/arceos.git"
+rev = "8f89bb24"
+replace-with = "vendored-sources"
 
-[target.riscv64gc-unknown-none-elf]
-rustflags = ["-Zcrate-attr=feature(core_io)", "-Aunused-features"]
+[source."git+https://github.com/duskmoon314/uart-rs/"]
+git = "https://github.com/duskmoon314/uart-rs/"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/duskmoon314/uart-rs/?rev=12be9142"]
+git = "https://github.com/duskmoon314/uart-rs/"
+rev = "12be9142"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/rafalh/rust-fatfs?rev=4eccb50"]
+git = "https://github.com/rafalh/rust-fatfs"
+rev = "4eccb50"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/rcore-os/smoltcp.git?rev=21a2f82"]
+git = "https://github.com/rcore-os/smoltcp.git"
+rev = "21a2f82"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/rustsbi/aclint?rev=b2136a66"]
+git = "https://github.com/rustsbi/aclint"
+rev = "b2136a66"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/rustsbi/bouffalo-hal?rev=968b949"]
+git = "https://github.com/rustsbi/bouffalo-hal"
+rev = "968b949"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/rustsbi/fast-trap?rev=8d855afa"]
+git = "https://github.com/rustsbi/fast-trap"
+rev = "8d855afa"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/rustsbi/serde-device-tree?rev=ffb4855"]
+git = "https://github.com/rustsbi/serde-device-tree"
+rev = "ffb4855"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/rustsbi/xuantie?rev=7a521c04"]
+git = "https://github.com/rustsbi/xuantie"
+rev = "7a521c04"
+replace-with = "vendored-sources"
+
+[source.vendored-sources]
+directory = "vendor"
